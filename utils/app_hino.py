@@ -11,10 +11,11 @@ text = page.extract_text()
 pagina = text.split('\n')
 
 for l in pagina:
-    if '407. ' not in l:
+    if '2. ' not in l:
         louvor.append(l)
     else:
         break
+        
 
 with open('Louvores.txt', 'w') as arquivo:
     arquivo.write("\n".join(louvor))
