@@ -1,5 +1,5 @@
 from django.contrib import admin
-from hinario.models import Hinos
+from hinario.models import Hino
 # Register your models here.
 
-admin.site.register(Hinos)
+admin.site.register(Hino)
