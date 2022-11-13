@@ -7,13 +7,11 @@ with open('utils/hcp.txt',encoding="utf8") as f:
     content = f.readlines()
 
 for x in content:
-    louvor.append(x.rstrip('\n'))
-print(louvor[0:10])
+    louvores.append(x.rstrip('\n'))
+louvores = filter(None, louvores)
 
-
-'''
-cont_pdf = 1
-l_l = 2
+cont_pdf = 361
+l_l = 362
 
 
 for l in louvores:
@@ -21,8 +19,8 @@ for l in louvores:
         louvor.append(l) 
 
     if f'{l_l}.' in l:
-        with open(f'utils/hinos/{cont_pdf}.txt', 'w') as arquivo:
+        with open(f'utils/hinos2/{cont_pdf}.txt', 'w') as arquivo:
             arquivo.write("\n".join(louvor))
             cont_pdf += 1
             louvor.clear()
-        l_l += 1'''
+        l_l += 1
