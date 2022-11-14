@@ -13,10 +13,51 @@ body{
     background-color: black;
 }
 
+header{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.title {
+    background-color: white;
+    height: 100px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.title1{
+    padding-top: 40px;
+    font-size: 20px;
+  
+}
+
+input{
+    margin-left: 120px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+}
+
+
+i{
+    position: absolute;
+    padding: 17px;
+    left: 120px;
+    color: rgb(145, 140, 140);
+}
+
+::placeholder{
+    padding-left: -100px;
+}
+
+
 .list{
     margin-left: 10px;
-    margin-top: 30px;
+    margin-top: 75px;
     list-style: none;
+    font-size: 10px;
+   
 }
 
 input[type="checkbox"]{
@@ -26,31 +67,31 @@ input[type="checkbox"]{
 input:checked~nav{
     transform: translate(350px);
 }
-
 .search{
-    margin-top: 90px;
-    padding: 10px;
-    margin-left: 5px;
+   padding: 5px;   
 }
 
 li{
-    padding: 5px;
-    font-size: 30px;
+    padding-top: 15px;
+    font-size:10px;
 }
 
 img{
 height: 70px;
 width: 70px;
+margin-top: 10px;
 margin-left: 10px;
 border-radius: 50%;
 }
 
 nav{
     background-color:white;
-    width: 350px;
+    width: 120px;
+    height: 250px;
     position: absolute;
     left: -350px;
     transition: all .5s;
+
 }
 
 a{
