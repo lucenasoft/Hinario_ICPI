@@ -1,5 +1,11 @@
-from django.shortcuts import get_list_or_404, get_object_or_404, render
+from django.shortcuts import render
 
-from .models import Hino
+from hinario.models import Hino
 
 # Create your views here.
+
+def lista_hinos(request):
+    hino = Hino.objects.all()
+    return render(request,'hinario.html',context={
+        'hinos':hino
+    })
