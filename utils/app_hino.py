@@ -1,20 +1,26 @@
 from time import sleep
 
-import pdfplumber as pdf
-
+louvores = list()
 louvor = list()
 
-pdf_open = pdf.open('utils/hcp.pdf')
+with open('utils/hcp.txt',encoding="utf8") as f:
+    content = f.readlines()
 
-page = pdf_open.pages[329]
-text = page.extract_text()
-pagina = text.split('\n')
+for x in content:
+    louvores.append(x.rstrip('\n'))
+louvores = filter(None, louvores)
 
-for l in pagina:
-    if '407. ' not in l:
-        louvor.append(l)
-    else:
-        break
+cont_pdf = 361
+l_l = 362
 
-with open('Louvores.txt', 'w') as arquivo:
-    arquivo.write("\n".join(louvor))
+
+for l in louvores:
+    if f'{l_l}.' not in l:
+        louvor.append(l) 
+
+    if f'{l_l}.' in l:
+        with open(f'utils/hinos2/{cont_pdf}.txt', 'w') as arquivo:
+            arquivo.write("\n".join(louvor))
+            cont_pdf += 1
+            louvor.clear()
+        l_l += 1
