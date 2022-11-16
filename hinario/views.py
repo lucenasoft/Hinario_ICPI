@@ -6,6 +6,6 @@ from hinario.models import Hino
 
 def lista_hinos(request):
     hino = Hino.objects.all()
-    return render(request,'hinario.html',context={
-        'hinos':hino
+    return render(request,'home.html',context={
+        'hinos':hino,
     })
