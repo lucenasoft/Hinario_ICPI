@@ -8,43 +8,53 @@ body {
     font-family: 'Roboto';
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     display: none;
 }
 
 
-input:checked~nav{
+input:checked~nav {
     transform: translate(400px);
 }
 
-label{
-    position: absolute;
-    z-index: 1;
-}
-
-nav{
+nav {
     background-color: white;
-    width:400px;
-    height: 100vh;
+    width: 400px;
+    height: 100%;
     position: absolute;
     left: -400px;
-    transition: all .5s;
-    border-radius: 10px;
+    transition: all 0.5s;
+    border-bottom-right-radius: 10px;
     
 }
 
-a{
-    text-decoration: none;
+.list {
     color: black;
+    margin-top: 150px;
+    list-style: none;
+    font-size: 35px;
 }
 
-a:hover{
+.list a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.list a:hover {
     color:#F1812F;
 }
+
+.list i {
+    margin-top: 12px;
+    margin-left: 7px;
+    color: #F1812F;
+}
+
 
 .header {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100px;
     background-color: rgb(255, 255, 255);
@@ -54,10 +64,10 @@ a:hover{
 
 .header h1 {
     margin: auto;  
-    margin-top: 15px; 
     text-decoration: none;
     color: black;
     font-size: 30px;
+    z-index: 1;
 }
 
 .header img {
@@ -104,13 +114,12 @@ a:hover{
     border-radius: 5px;
 }
 
-i{
+.input-search i {
     margin-top: 12px;
     margin-left: 7px;
     color: #F1812F;
+    cursor: pointer;
 }
-
-
 
 .container {
     display: block;
@@ -126,18 +135,4 @@ i{
     list-style: none;
     font-weight: bold;
     padding: 5px;
-}
-
-.list{
-    color: black;
-    margin-top: 150px;
-    list-style: none;
-    font-size: 35px;
-}
-
-.a{
-    padding-bottom: 15px;
-    font-size: 25px;
-    font-family: 'Roboto';
-    font-weight: bold
 }
