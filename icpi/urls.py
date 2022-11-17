@@ -18,8 +18,10 @@ from django.urls import path
 from hinario import views
 from django.views.generic import RedirectView
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hinos/', views.lista_hinos),
+    path('<int:id>/', views.hino),
     path('', RedirectView.as_view(url = '/hinos')),
 ]
