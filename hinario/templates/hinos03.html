@@ -1,0 +1,11 @@
+{% extends 'base_global.html' %}
+{% block title %}Hinos{% endblock title %}
+{% block content %}
+<div class="container">
+    <ul>
+        {% for hino in hinos03 %}
+        <li><a href="{% url 'hino' hino.id %}">{{ hino.titulo }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock content %}

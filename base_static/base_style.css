@@ -125,6 +125,22 @@ nav {
     color: white;
 }
 
+.container pre {
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    line-break: normal;
+}
+
+.container h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.container a {
+    color: white;
+}
+
 .container ul {
     padding: 20px;
     margin: 0;

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     {% include 'partials/head.html' %}
     <title>{% block title %}{% endblock title %}</title>
 </head>
+
 <body>
     {% include 'partials/header.html' %}
     {% include 'partials/menu.html' %}
+    {% if search is not False %}
     {% include 'partials/search.html' %}
+    {% endif %}
     {% block content %}{% endblock content %}
 </body>
+
 </html>
