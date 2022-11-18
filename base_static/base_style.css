@@ -125,10 +125,11 @@ nav {
     color: white;
 }
 
-.container p {
+.container pre {
     font-size: 20px;
     text-align: center;
     margin: auto;
+    line-break: normal;
 }
 
 .container h1 {
