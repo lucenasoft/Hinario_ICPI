@@ -4,7 +4,7 @@
 <div class="container">
     <ul>
         {% for hino in hinos %}
-        <li><b>{{ hino.titulo }}</b></li>
+        <li><a href="{% url 'hino' hino.id %}">{{ hino.titulo }}</a></li>
         {% endfor %}
     </ul>
 </div>

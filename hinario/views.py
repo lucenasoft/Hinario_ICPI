@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404, render
 
 from hinario.models import Hino
 
@@ -14,4 +14,5 @@ def hino(request,id):
     hino = get_object_or_404(Hino, pk=id)
     return render(request,'hino-view.html',context= {
         'hino': hino,
+        'search': False,
     })

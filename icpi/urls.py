@@ -15,13 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from hinario import views
 from django.views.generic import RedirectView
 
+from hinario import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hinos/', views.lista_hinos),
-    path('<int:id>/', views.hino),
+    path('hinos/', views.lista_hinos, name='hinos'),
+    path('hino/<int:id>/', views.hino, name='hino'),
     path('', RedirectView.as_view(url = '/hinos')),
 ]
