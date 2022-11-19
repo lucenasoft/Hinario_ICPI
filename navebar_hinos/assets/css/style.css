@@ -1,0 +1,33 @@
+.navbar {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 10px 18px 10px 18px;
+    border: 1px solid white;
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.navbar li:hover{
+    background-color: orange;
+}
+
+.navbar a:hover{
+    color: white;
+}
