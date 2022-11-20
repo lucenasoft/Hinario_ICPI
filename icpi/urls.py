@@ -27,5 +27,6 @@ urlpatterns = [
     path('hinos/page=4', views.hinos04, name='hinos04'),
     path('hinos/page=5', views.hinos05, name='hinos05'),
     path('hino/<int:id>/', views.hino, name='hino'),
+    path('sobre/', views.sobre, name='sobre'),
     path('', RedirectView.as_view(url = '/hinos/page=1')),
 ]

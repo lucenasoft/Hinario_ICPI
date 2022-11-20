@@ -46,3 +46,9 @@ def hino(request,id):
         'search': False,
         'navbar_page': False
     })
+
+def sobre(request):
+    return render(request, 'sobre.html', context= {
+        'search': False,
+        'navbar_page': False,
+    })

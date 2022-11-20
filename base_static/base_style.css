@@ -4,7 +4,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: #313233;
     font-family: 'Roboto';
 }
 
@@ -18,7 +18,7 @@ input:checked~nav {
 }
 
 nav {
-    background-color: white;
+    background-color: #fafafa;
     width: 400px;
     height: 100%;
     position: absolute;
@@ -37,6 +37,7 @@ nav {
 
 .list a {
     text-decoration: none;
+    transition: ease-in-out 0.2s;
     color: rgb(0, 0, 0);
 }
 
@@ -57,7 +58,8 @@ nav {
     justify-content: center;
     width: 100%;
     height: 100px;
-    background-color: rgb(255, 255, 255);
+    background-color: #fafafa;
+    border-bottom: none;
 }
 
 .header h1 {
@@ -84,7 +86,7 @@ nav {
     height: 30px;
     padding: 0px;
     border: none;
-    background-color: white;
+    background-color: #fafafa;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -119,7 +121,7 @@ nav {
 }
 
 .input-search i {
-    background-color: white;
+    background-color: #fafafa;
     padding: 12px;
     color: #F1812F;
     cursor: pointer;
@@ -128,17 +130,19 @@ nav {
 
 .container {
     display: block;
-    color: white;
+    color: #fafafa;
 }
 
 .container pre {
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-    line-break: normal;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    font-family: 'Roboto';
 }
 
 .container h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 25px;
     text-align: center;
 }
@@ -146,7 +150,11 @@ nav {
 .container a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    
+    transition: ease-in-out 0.2s;
+}
+
+.container a:hover {
+    color: #F1812F;
 }
 
 .container ul {
@@ -158,8 +166,8 @@ nav {
     list-style: none;
     font-weight: bold;
     padding: 10px;
-    background-color: white;
-    margin-bottom: 10px;
+    background-color: #fafafa;
+    margin-bottom: 3px;
     border: none;
     border-radius: 5px;
 }
