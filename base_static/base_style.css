@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body {
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: #313233;
     font-family: 'Roboto';
 }
 
@@ -17,7 +18,7 @@ input:checked~nav {
 }
 
 nav {
-    background-color: white;
+    background-color: #fafafa;
     width: 400px;
     height: 100%;
     position: absolute;
@@ -36,6 +37,7 @@ nav {
 
 .list a {
     text-decoration: none;
+    transition: ease-in-out 0.2s;
     color: rgb(0, 0, 0);
 }
 
@@ -56,9 +58,8 @@ nav {
     justify-content: center;
     width: 100%;
     height: 100px;
-    background-color: rgb(255, 255, 255);
-    border-top-left-radius: 17px;
-    border-top-right-radius: 17px;
+    background-color: #fafafa;
+    border-bottom: none;
 }
 
 .header h1 {
@@ -84,7 +85,10 @@ nav {
     width: 100%;
     height: 30px;
     padding: 0px;
-    background-color: white;
+    border: none;
+    background-color: #fafafa;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .menu a {
@@ -98,47 +102,59 @@ nav {
 .menu a:hover {
     border: none;
     border-bottom: 3px solid black;
+    border-bottom-left-radius: 10px;
 }
 
 .input-search {
     display: flex;
     justify-content: center;
     padding: 15px;
+    border-radius: 5px;
 }
 
 .input-search input {
     border: none;
     padding: 10px;
     font-size: 20px;
-    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
+    
 }
 
 .input-search i {
-    margin-top: 12px;
-    margin-left: 7px;
+    background-color: #fafafa;
+    padding: 12px;
     color: #F1812F;
     cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
 }
 
 .container {
     display: block;
-    color: white;
+    color: #fafafa;
 }
 
 .container pre {
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-    line-break: normal;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    font-family: 'Roboto';
 }
 
 .container h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 25px;
     text-align: center;
 }
 
 .container a {
-    color: white;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+}
+
+.container a:hover {
+    color: #F1812F;
 }
 
 .container ul {
@@ -149,5 +165,9 @@ nav {
 .container li {
     list-style: none;
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
+    background-color: #fafafa;
+    margin-bottom: 3px;
+    border: none;
+    border-radius: 5px;
 }
