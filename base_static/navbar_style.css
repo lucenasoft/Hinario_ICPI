@@ -1,32 +1,23 @@
 .navbar {
     display: flex;
     justify-content: center;
-}
-
-.navbar ul{
-    padding: 0;
-    list-style: none;
-}
-
-.navbar li{
-    display: inline-block;
-    padding: 5px 12px 5px 12px;
-    border: none;
-    margin-left: 5px;
+    border-radius: 5px;
+    margin: auto;
+    width: 200px;
     background-color: white;
-    border-radius: 10px;
 }
 
-.navbar a{
+.navbar a {
+    font-weight: bold;
+    padding: 10px;
     text-decoration: none;
     color: black;
-    font-size: 20px;
 }
 
-.navbar li:hover{
-    background-color: orange;
-}
-
-.navbar a:hover{
-    color: white;
+.select-page {
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
 }

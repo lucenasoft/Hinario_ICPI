@@ -12,7 +12,9 @@
     {% if search is not False %}
     {% include 'partials/search.html' %}
     {% endif %}
+    {% if navbar_page is not False %}
     {% include 'partials/navebar_page.html' %}
+    {% endif %}
     {% block content %}{% endblock content %}
 </body>
 
