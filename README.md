@@ -1,0 +1,4 @@
+# Hinario_ICPI
+Projeto de Hinário para ICPI-Arcoverde
+
+- COLOCAR EM FUNCIONAMENTO O SEARCH PARA BUSCA DOS HINOS.
