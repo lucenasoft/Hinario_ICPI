@@ -1,17 +1,21 @@
+from django.core.paginator import Paginator
 from django.shortcuts import get_object_or_404, render
 
 from hinario.models import Hino
 
 # Create your views here.
 
-def hinos01(request):
-    hinos01 = Hino.objects.all()
+def hinos(request):
+    hinos_list = Hino.objects.all()
     search = request.GET.get('search')
+    paginator = Paginator(hinos_list, 100)
+    page = request.GET.get('page')
+    hinos = paginator.get_page(page)
     if search:
-        hinos01 = hinos01.filter(titulo__icontains=search)
+        hinos = hinos_list.filter(titulo__icontains=search)
     return render(request,'hinos01.html',context={
-        'hinos01':hinos01,
-        'select_page': 1,
+        'hinos01':hinos,
+        'navbar_page': True
     })
 
 def hino(request,id):

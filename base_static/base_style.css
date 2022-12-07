@@ -115,14 +115,20 @@ nav {
 .input-search input {
     border: none;
     padding: 10px;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 5px 0px 0px 5px;
     
 }
 
+.input-search button {
+    border: none;
+    background: none;
+    margin-left: -10px;
+}
+
 .input-search i {
     background-color: #fafafa;
-    padding: 12px;
+    padding: 12.5px 12px 12.5px 13px;
     color: #F1812F;
     cursor: pointer;
     border-radius: 0px 5px 5px 0px;

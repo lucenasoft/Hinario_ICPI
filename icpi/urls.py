@@ -21,8 +21,8 @@ from hinario import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hinos/', views.hinos01, name='hinos01'),
+    path('hinos/', views.hinos, name='hinos01'),
     path('hino/<int:id>/', views.hino, name='hino'),
     path('sobre/', views.sobre, name='sobre'),
-    path('', RedirectView.as_view(url = '/hinos/page=1')),
+    path('', RedirectView.as_view(url = '/hinos')),
 ]
